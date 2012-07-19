@@ -1,7 +1,9 @@
 package com.colabug;
 
 import android.app.Activity;
+import android.app.Service;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.view.View;
 
 import com.nineoldandroids.animation.ArgbEvaluator;
@@ -30,10 +32,16 @@ public class AnimationActivity extends Activity
             @Override
             public void onClick(View view) {
                 performXYViewAnimation();
+                vibrate();
             }
         });
 
         animateBackground();
+    }
+
+    protected void vibrate() {
+        Vibrator v = (Vibrator) this.getSystemService(Service.VIBRATOR_SERVICE);
+        v.vibrate(200);
     }
 
     protected void performXYViewAnimation() {

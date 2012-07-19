@@ -58,9 +58,16 @@ public class AnimationActivityTest {
         assertTrue(animationActivity.textViewWasAnimated);
     }
 
+    @Test
+    public void welcomeViewShouldVibrateWhenTouched() throws Exception {
+        mainView.performClick();
+        assertTrue(animationActivity.backgroundVibrated);
+    }
+
     class TestAnimationActivity extends AnimationActivity {
         protected boolean backgroundWasAnimated = false;
         protected boolean textViewWasAnimated = false;
+        protected boolean backgroundVibrated = false;
 
         @Override
         protected void animateBackground() {
@@ -70,6 +77,11 @@ public class AnimationActivityTest {
         @Override
         protected void performXYViewAnimation() {
             textViewWasAnimated = true;
+        }
+
+        @Override
+        protected void vibrate() {
+            backgroundVibrated = true;
         }
     }
 }
