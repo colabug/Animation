@@ -14,8 +14,17 @@ import static com.nineoldandroids.view.ViewPropertyAnimator.animate;
 
 public class AnimationActivity extends Activity
 {
+    // Animation constants
+    public static final int FULL_CIRCLE = 360;
+    public static final int RED = 0xFFFF8080;
+    public static final int BLUE = 0xFF8080FF;
+    public static final int ANIMATION_DURATION = 2000;
+    public static final int HAPTIC_DURATION_IN_MILLISECONDS = 50;
+    public static final String BACKGROUND_COLOR_PROPERTY = "backgroundColor";
+
+    // View
     private View mainView;
-    private View welcomeText;
+    private View sunEarthCircle;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -25,13 +34,13 @@ public class AnimationActivity extends Activity
         // View
         setContentView(R.layout.main);
         mainView = findViewById(R.id.main_view);
-        welcomeText = findViewById(R.id.welcome_text);
+        sunEarthCircle = findViewById(R.id.sun_earth_circle);
 
         // TextView click
-        mainView.setOnClickListener(new View.OnClickListener() {
+        sunEarthCircle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                performXYViewAnimation();
+                rotateView(sunEarthCircle);
                 vibrate();
             }
         });
@@ -41,22 +50,19 @@ public class AnimationActivity extends Activity
 
     protected void vibrate() {
         Vibrator v = (Vibrator) this.getSystemService(Service.VIBRATOR_SERVICE);
-        v.vibrate(50);
+        v.vibrate(HAPTIC_DURATION_IN_MILLISECONDS);
     }
 
-    protected void performXYViewAnimation() {
-        animate(welcomeText).setDuration(2000)
-                            .rotationXBy(360)
-                            .x(100)
-                            .y(200);
+    protected void rotateView(View view) {
+        animate(view).setDuration(ANIMATION_DURATION).rotation(FULL_CIRCLE);
     }
 
     protected void animateBackground() {
         ValueAnimator colorAnimation = ofInt(mainView,
-                                             "backgroundColor",
-                                             0xFFFF8080,
-                                             0xFF8080FF);
-        colorAnimation.setDuration(3000);
+                                             BACKGROUND_COLOR_PROPERTY,
+                                             RED,
+                                             BLUE);
+        colorAnimation.setDuration(ANIMATION_DURATION);
         colorAnimation.setEvaluator(new ArgbEvaluator());
         colorAnimation.setRepeatCount(ValueAnimator.INFINITE);
         colorAnimation.setRepeatMode(ValueAnimator.REVERSE);

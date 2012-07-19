@@ -9,7 +9,6 @@ package com.colabug;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.colabug.support.AnimationTestRunner;
 
@@ -29,7 +28,6 @@ public class AnimationActivityTest {
     private TestAnimationActivity animationActivity;
 
     private View mainView;
-    private TextView welcomeText;
     private ImageView sunEarthImage;
 
     @Before
@@ -37,20 +35,8 @@ public class AnimationActivityTest {
         animationActivity = new TestAnimationActivity();
         animationActivity.onCreate(null);
 
-        welcomeText = (TextView) animationActivity.findViewById(R.id.welcome_text);
         mainView = animationActivity.findViewById(R.id.main_view);
         sunEarthImage = (ImageView) animationActivity.findViewById(R.id.sun_earth_circle);
-    }
-
-    @Test
-    public void shouldHaveWelcomeText() throws Exception {
-        assertViewIsVisible(welcomeText);
-    }
-
-    @Test
-    public void shouldHaveWelcomeTextString() throws Exception {
-        assertThat(welcomeText.getText().toString(),
-                   equalTo(getResourceString(R.string.welcome_string)));
     }
 
     @Test
@@ -59,15 +45,15 @@ public class AnimationActivityTest {
     }
 
     @Test
-    public void welcomeViewShouldAnimateWhenTouched() throws Exception {
-        mainView.performClick();
-        assertTrue(animationActivity.textViewWasAnimated);
+    public void sunEarthViewShouldAnimateWhenTouched() throws Exception {
+        sunEarthImage.performClick();
+        assertTrue(animationActivity.sunEarthWasRotated);
     }
 
     @Test
-    public void welcomeViewShouldVibrateWhenTouched() throws Exception {
-        mainView.performClick();
-        assertTrue(animationActivity.backgroundVibrated);
+    public void sunEarthViewShouldVibrateWhenTouched() throws Exception {
+        sunEarthImage.performClick();
+        assertTrue(animationActivity.vibrationOccurred);
     }
 
     @Test
@@ -83,8 +69,8 @@ public class AnimationActivityTest {
 
     class TestAnimationActivity extends AnimationActivity {
         protected boolean backgroundWasAnimated = false;
-        protected boolean textViewWasAnimated = false;
-        protected boolean backgroundVibrated = false;
+        protected boolean sunEarthWasRotated = false;
+        protected boolean vibrationOccurred = false;
 
         @Override
         protected void animateBackground() {
@@ -92,13 +78,13 @@ public class AnimationActivityTest {
         }
 
         @Override
-        protected void performXYViewAnimation() {
-            textViewWasAnimated = true;
+        protected void rotateView(View view) {
+            sunEarthWasRotated = true;
         }
 
         @Override
         protected void vibrate() {
-            backgroundVibrated = true;
+            vibrationOccurred = true;
         }
     }
 }

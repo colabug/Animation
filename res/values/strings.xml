@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">Animation</string>
     <string name="welcome_string">Hello World, AnimationActivity</string>
+    <string name="SUN_DIAL_CONTENT_DESCRIPTION">Sun Dial</string>
 </resources>

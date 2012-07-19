@@ -4,14 +4,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/MatchVertical">
 
-    <TextView
-        android:id="@+id/welcome_text"
-        android:text="@string/welcome_string"
-        style="@style/Wrap"/>
-
     <ImageView
         android:id="@+id/sun_earth_circle"
         android:src="@drawable/sun_earth"
+        android:contentDescription="@string/SUN_DIAL_CONTENT_DESCRIPTION"
         style="@style/Wrap"/>
 </LinearLayout>
 
