@@ -14,34 +14,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19edfe3e-7749-4b4f-9324-b87e67d774c2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_android_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_android_support_v4_r6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_pivotallabs_robolectric_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_14_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20080701.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_khronos_opengl_api_gl1_1_android_2_1_r1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xmlParserAPIs_2_6_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_1_1_4c.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/colabug/support/AnimationTestRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/colabug/AnimationActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/colabug/AnimationActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_nineoldandroids_library_2_4_0.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Animation.iml" afterPath="$PROJECT_DIR$/Animation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/colabug/AnimationActivity.java" afterPath="$PROJECT_DIR$/src/main/java/com/colabug/AnimationActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/colabug/support/AnimationTestRunner.java" afterPath="$PROJECT_DIR$/src/test/java/com/colabug/support/AnimationTestRunner.java" />
     </list>
     <ignored path="Animation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +42,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java" line="30" class="com.colabug.AnimationActivityTest" package="com.colabug">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java" line="32" class="com.colabug.AnimationActivityTest" package="com.colabug">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -73,7 +55,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/colabug/AnimationActivity.java" line="12" class="com.colabug.AnimationActivity" package="com.colabug">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/colabug/AnimationActivity.java" line="24" class="com.colabug.AnimationActivity" package="com.colabug">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -126,22 +108,22 @@
     <favorites_list name="Animation" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4928264">
+    <splitter split-orientation="horizontal" split-proportion="0.41822094">
       <split-first>
         <leaf>
-          <file leaf-file-name="AnimationActivityTest.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="AnimationActivityTest.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="68" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
+                <state line="59" column="25" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.75581396">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AnimationTestRunner.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="AnimationTestRunner.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/colabug/support/AnimationTestRunner.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="48" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.78163266">
+                <state line="37" column="48" selection-start="1170" selection-end="1170" vertical-scroll-proportion="-14.730769">
                   <folding />
                 </state>
               </provider>
@@ -151,19 +133,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="AnimationActivity.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="AnimationActivity.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/colabug/AnimationActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="10" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+                <state line="40" column="30" selection-start="1020" selection-end="1020" vertical-scroll-proportion="1.2854443">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AndroidManifest.xml" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="40" selection-start="704" selection-end="704" vertical-scroll-proportion="0.67054266">
+                <state line="22" column="40" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -172,7 +154,7 @@
           <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
+                <state line="10" column="19" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -196,11 +178,12 @@
       <list>
         <option value="$PROJECT_DIR$/target/generated-sources/r/AnimationActivityTest.java" />
         <option value="$PROJECT_DIR$/src/test/AnimationActivityTest.java" />
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/colabug/AnimationApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/colabug/support/AnimationTestRunner.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/colabug/AnimationActivity.java" />
       </list>
     </option>
   </component>
@@ -305,6 +288,11 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+  <component name="ProjectStructureProblems">
+    <ignored-problems>
+      <problem id="unused-library(library:project:Maven: com.google.android:android:4.0.1.2)" />
+    </ignored-problems>
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -399,6 +387,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Animation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Animation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Animation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Animation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -408,6 +428,7 @@
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="fileTemplates" />
@@ -743,8 +764,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6706507" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24677187" sideWeight="0.685259" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2616202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.07890961" sideWeight="0.73837984" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2616202" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32934928" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -841,13 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="8" selection-start="8" selection-end="8" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$ANDROID_HOME$/platforms/android-8/android.jar!/java/lang/ClassLoader.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -857,30 +871,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="68" selection-start="1086" selection-end="1086" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/colabug/support/AnimationTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="48" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.78163266">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/colabug/AnimationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="10" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+        <state line="37" column="48" selection-start="1170" selection-end="1170" vertical-scroll-proportion="-14.730769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="40" selection-start="704" selection-end="704" vertical-scroll-proportion="0.67054266">
+        <state line="22" column="40" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/nineoldandroids/library/2.4.0/library-2.4.0.jar!/com/nineoldandroids/animation/ObjectAnimator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="63" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.3496802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="19" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/colabug/AnimationActivityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="25" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.75581396">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/colabug/AnimationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="1020" selection-end="1020" vertical-scroll-proportion="1.2854443">
           <folding />
         </state>
       </provider>
@@ -942,7 +970,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
