@@ -2,5 +2,7 @@ build.xml
 gen/*
 local.properties
 out/*
+target/*
+tmp/*
 *.diff
 *.swp
