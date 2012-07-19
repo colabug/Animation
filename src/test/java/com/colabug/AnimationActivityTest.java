@@ -6,7 +6,9 @@ package com.colabug;
  * @since 1.0
  */
 
+import android.graphics.drawable.Drawable;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.colabug.support.AnimationTestRunner;
@@ -24,16 +26,20 @@ import static org.junit.Assert.assertTrue;
 
 public class AnimationActivityTest {
 
-    private TextView welcomeText;
     private TestAnimationActivity animationActivity;
+
     private View mainView;
+    private TextView welcomeText;
+    private ImageView sunEarthImage;
 
     @Before
     public void setUp() throws Exception {
         animationActivity = new TestAnimationActivity();
         animationActivity.onCreate(null);
+
         welcomeText = (TextView) animationActivity.findViewById(R.id.welcome_text);
         mainView = animationActivity.findViewById(R.id.main_view);
+        sunEarthImage = (ImageView) animationActivity.findViewById(R.id.sun_earth_circle);
     }
 
     @Test
@@ -62,6 +68,17 @@ public class AnimationActivityTest {
     public void welcomeViewShouldVibrateWhenTouched() throws Exception {
         mainView.performClick();
         assertTrue(animationActivity.backgroundVibrated);
+    }
+
+    @Test
+    public void shouldHaveImage() throws Exception {
+        assertViewIsVisible(sunEarthImage);
+    }
+
+    @Test
+    public void shouldHaveSunEarthImage() throws Exception {
+        Drawable drawable = sunEarthImage.getDrawable();
+        assertThat(drawable, equalTo(getResourceDrawable(R.drawable.sun_earth)));
     }
 
     class TestAnimationActivity extends AnimationActivity {

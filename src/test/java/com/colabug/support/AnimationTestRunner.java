@@ -27,6 +27,10 @@ public class AnimationTestRunner extends RobolectricTestRunner {
         return Robolectric.application.getApplicationContext().getString(resourceId);
     }
 
+    public static Drawable getResourceDrawable(int resourceId) {
+        return Robolectric.application.getApplicationContext().getResources().getDrawable(resourceId);
+    }
+
     public static void assertViewIsVisible(View view) {
         assertNotNull(view);
         assertThat(view.getVisibility(), equalTo(View.VISIBLE));

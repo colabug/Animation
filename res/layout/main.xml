@@ -2,14 +2,16 @@
 <LinearLayout
     android:id="@+id/main_view"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    style="@style/MatchVertical">
 
     <TextView
         android:id="@+id/welcome_text"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/welcome_string"/>
+        android:text="@string/welcome_string"
+        style="@style/Wrap"/>
+
+    <ImageView
+        android:id="@+id/sun_earth_circle"
+        android:src="@drawable/sun_earth"
+        style="@style/Wrap"/>
 </LinearLayout>
 
