@@ -41,7 +41,7 @@ public class AnimationActivity extends Activity
 
     protected void vibrate() {
         Vibrator v = (Vibrator) this.getSystemService(Service.VIBRATOR_SERVICE);
-        v.vibrate(200);
+        v.vibrate(50);
     }
 
     protected void performXYViewAnimation() {
