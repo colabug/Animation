@@ -22,34 +22,36 @@ public class AnimationActivity extends Activity
 
         // View
         setContentView(R.layout.main);
-        welcomeText = findViewById(R.id.welcome_text);
         mainView = findViewById(R.id.main_view);
+        welcomeText = findViewById(R.id.welcome_text);
 
-        // Animations
-        animateView();
+        // TextView click
+        mainView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                performXYViewAnimation();
+            }
+        });
+
+        animateBackground();
     }
 
-    protected void animateView() {
-        addEndlessColorAnimation();
-        performXYViewAnimation();
-    }
-
-    private void performXYViewAnimation() {
+    protected void performXYViewAnimation() {
         animate(welcomeText).setDuration(2000)
                             .rotationXBy(360)
                             .x(100)
-                            .y(100);
+                            .y(200);
     }
 
-    private void addEndlessColorAnimation() {
-        ValueAnimator colorAnim = ofInt(mainView,
-                                        "backgroundColor",
-                                        0xFFFF8080,
-                                        0xFF8080FF);
-        colorAnim.setDuration(3000);
-        colorAnim.setEvaluator(new ArgbEvaluator());
-        colorAnim.setRepeatCount(ValueAnimator.INFINITE);
-        colorAnim.setRepeatMode(ValueAnimator.REVERSE);
-        colorAnim.start();
+    protected void animateBackground() {
+        ValueAnimator colorAnimation = ofInt(mainView,
+                                             "backgroundColor",
+                                             0xFFFF8080,
+                                             0xFF8080FF);
+        colorAnimation.setDuration(3000);
+        colorAnimation.setEvaluator(new ArgbEvaluator());
+        colorAnimation.setRepeatCount(ValueAnimator.INFINITE);
+        colorAnimation.setRepeatMode(ValueAnimator.REVERSE);
+        colorAnimation.start();
     }
 }
