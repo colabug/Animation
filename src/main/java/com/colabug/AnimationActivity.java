@@ -36,12 +36,21 @@ public class AnimationActivity extends Activity
         mainView = findViewById(R.id.main_view);
         sunEarthCircle = findViewById(R.id.sun_earth_circle);
 
-        // TextView click
+        // Sun/earth animation on click
         sunEarthCircle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 rotateView(sunEarthCircle);
                 vibrate();
+            }
+        });
+
+        // Next screen on click
+        View button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(NewActivity.createIntent(AnimationActivity.this));
             }
         });
 

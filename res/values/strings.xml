@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--Activities-->
     <string name="app_name">Animation</string>
+    <string name="new_actvity">New activity</string>
+
+    <!--Animation Activity-->
     <string name="welcome_string">Hello World, AnimationActivity</string>
     <string name="SUN_DIAL_CONTENT_DESCRIPTION">Sun Dial</string>
+    <string name="BUTTON_TEXT">Click Me!</string>
+
+    <!--New Activity-->
 </resources>

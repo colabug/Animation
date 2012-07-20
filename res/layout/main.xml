@@ -2,12 +2,18 @@
 <LinearLayout
     android:id="@+id/main_view"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
     style="@style/MatchVertical">
 
     <ImageView
         android:id="@+id/sun_earth_circle"
         android:src="@drawable/sun_earth"
         android:contentDescription="@string/SUN_DIAL_CONTENT_DESCRIPTION"
+        style="@style/Wrap"/>
+
+    <Button
+        android:id="@+id/button"
+        android:text="@string/BUTTON_TEXT"
         style="@style/Wrap"/>
 </LinearLayout>
 

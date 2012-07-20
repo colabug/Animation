@@ -6,11 +6,13 @@ package com.colabug;
  * @since 1.0
  */
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.colabug.support.AnimationTestRunner;
+import com.xtremelabs.robolectric.matchers.StartedMatcher;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -27,16 +29,16 @@ public class AnimationActivityTest {
 
     private TestAnimationActivity animationActivity;
 
-    private View mainView;
     private ImageView sunEarthImage;
+    private View button;
 
     @Before
     public void setUp() throws Exception {
         animationActivity = new TestAnimationActivity();
         animationActivity.onCreate(null);
 
-        mainView = animationActivity.findViewById(R.id.main_view);
         sunEarthImage = (ImageView) animationActivity.findViewById(R.id.sun_earth_circle);
+        button = animationActivity.findViewById(R.id.button);
     }
 
     @Test
@@ -65,6 +67,18 @@ public class AnimationActivityTest {
     public void shouldHaveSunEarthImage() throws Exception {
         Drawable drawable = sunEarthImage.getDrawable();
         assertThat(drawable, equalTo(getResourceDrawable(R.drawable.sun_earth)));
+    }
+
+    @Test
+    public void shouldHaveButton() throws Exception {
+        assertViewIsVisible(button);
+    }
+
+    @Test
+    public void buttonShouldStartNextScreen() throws Exception {
+        button.performClick();
+        Intent intent = NewActivity.createIntent(animationActivity);
+        assertThat(animationActivity, new StartedMatcher(intent));
     }
 
     class TestAnimationActivity extends AnimationActivity {
