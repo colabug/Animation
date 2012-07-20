@@ -10,4 +10,5 @@
     <string name="BUTTON_TEXT">Click Me!</string>
 
     <!--New Activity-->
+    <string name="GO_BACK_TEXT">Go Back</string>
 </resources>

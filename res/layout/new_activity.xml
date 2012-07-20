@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    style="@style/MatchVertical">
+
+    <Button
+        android:id="@+id/back_to_animation_button"
+        android:text="@string/GO_BACK_TEXT"
+        style="@style/Wrap"/>
+</LinearLayout>
+
