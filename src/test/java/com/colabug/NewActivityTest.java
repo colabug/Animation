@@ -6,7 +6,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static com.colabug.support.AnimationTestRunner.assertViewIsVisible;
 import static org.junit.Assert.assertNotNull;
 
 /**
@@ -14,25 +13,28 @@ import static org.junit.Assert.assertNotNull;
  *
  * @since 1.0
  */
-@RunWith(AnimationTestRunner.class)
+@RunWith (AnimationTestRunner.class)
 
-public class NewActivityTest {
-
+public class NewActivityTest
+{
     private NewActivity newActivity;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() throws Exception
+    {
         newActivity = new NewActivity();
-        newActivity.onCreate(null);
+        newActivity.onCreate( null );
     }
 
     @Test
-    public void shouldNotBeNull() throws Exception {
-        assertNotNull(newActivity);
+    public void shouldNotBeNull() throws Exception
+    {
+        assertNotNull( newActivity );
     }
 
     @Test
-    public void shouldHaveButton() throws Exception {
-        assertViewIsVisible(newActivity.findViewById(R.id.back_to_animation_button));
+    public void shouldHaveNewFragment() throws Exception
+    {
+        assertNotNull( newActivity.getSupportFragmentManager().findFragmentById( R.id.new_fragment ) );
     }
 }

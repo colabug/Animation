@@ -1,6 +1,10 @@
 package com.colabug.support;
 
 import android.graphics.drawable.Drawable;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 
 import com.xtremelabs.robolectric.Robolectric;
@@ -17,22 +21,35 @@ import static org.junit.Assert.assertThat;
  *
  * @since 1.0
  */
-public class AnimationTestRunner extends RobolectricTestRunner {
+public class AnimationTestRunner extends RobolectricTestRunner
+{
 
-    public AnimationTestRunner(Class<?> testClass) throws InitializationError {
-        super(testClass);
+    public AnimationTestRunner( Class<?> testClass ) throws InitializationError
+    {
+        super( testClass );
     }
 
-    public static String getResourceString(int resourceId) {
-        return Robolectric.application.getApplicationContext().getString(resourceId);
+    public static void startFragment( Fragment fragment )
+    {
+        FragmentManager fragmentManager = new FragmentActivity().getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add( fragment, null );
+        fragmentTransaction.commit();
     }
 
-    public static Drawable getResourceDrawable(int resourceId) {
-        return Robolectric.application.getApplicationContext().getResources().getDrawable(resourceId);
+    public static String getResourceString( int resourceId )
+    {
+        return Robolectric.application.getApplicationContext().getString( resourceId );
     }
 
-    public static void assertViewIsVisible(View view) {
-        assertNotNull(view);
-        assertThat(view.getVisibility(), equalTo(View.VISIBLE));
+    public static Drawable getResourceDrawable( int resourceId )
+    {
+        return Robolectric.application.getApplicationContext().getResources().getDrawable( resourceId );
+    }
+
+    public static void assertViewIsVisible( View view )
+    {
+        assertNotNull( view );
+        assertThat( view.getVisibility(), equalTo( View.VISIBLE ) );
     }
 }

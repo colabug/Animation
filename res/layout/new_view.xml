@@ -4,9 +4,9 @@
     android:gravity="center"
     style="@style/MatchVertical">
 
-    <fragment
-        android:id="@+id/new_fragment"
-        android:name="com.colabug.NewFragment"
-        style="@style/Match"/>
+    <Button
+        android:id="@+id/back_to_animation_button"
+        android:text="@string/GO_BACK_TEXT"
+        style="@style/Wrap"/>
 </LinearLayout>
 

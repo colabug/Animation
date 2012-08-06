@@ -1,9 +1,9 @@
 package com.colabug;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 
 /**
@@ -11,22 +11,26 @@ import android.view.View;
  *
  * @since 1.0
  */
-public class NewActivity extends Activity {
+public class NewActivity extends FragmentActivity
+{
     @Override
-    public void onCreate(Bundle savedInstanceState)
+    public void onCreate( Bundle savedInstanceState )
     {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_activity);
-        View button = findViewById(R.id.back_to_animation_button);
-        button.setOnClickListener(new View.OnClickListener() {
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.new_activity );
+        View button = findViewById( R.id.back_to_animation_button );
+        button.setOnClickListener( new View.OnClickListener()
+        {
             @Override
-            public void onClick(View view) {
+            public void onClick( View view )
+            {
                 finish();
             }
-        });
+        } );
     }
 
-    public static Intent createIntent(Context context) {
-        return new Intent(context, NewActivity.class);
+    public static Intent createIntent( Context context )
+    {
+        return new Intent( context, NewActivity.class );
     }
 }
